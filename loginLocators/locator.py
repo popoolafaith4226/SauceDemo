@@ -15,3 +15,17 @@ class Click_add_cart_button:
 class Click_checkout_button:
     CHECKOUT_BUTTON = (By.XPATH, "//*[@id='cart_contents_container']/div/div[2]/a[2]")
 
+class First_name:
+    FIRSTNAME = (By.ID, "first-name")
+
+class Last_name:
+    LASTNAME = (By.ID, "last-name")
+
+class Zip_code:
+    ZIP_CODE = (By.ID, "postal-code")
+
+class Click_continue_button:
+    CONTINUE_BUTTON = (By.XPATH, "//*[@id='checkout_info_container']/div/form/div[2]/input")
+
+class Click_finish_button:
+    FINISH_BUTTON = (By.XPATH, "//*[@id='checkout_summary_container']/div/div[2]/div[8]/a[2]")
