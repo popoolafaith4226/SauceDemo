@@ -109,7 +109,7 @@ class finish_button:
             EC.presence_of_element_located(Click_finish_button.FINISH_BUTTON))
         click_finish_button.click()
 
-        time.sleep(3)
+        time.sleep(4)
 
 
 
