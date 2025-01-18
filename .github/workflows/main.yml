@@ -1,9 +1,9 @@
 
-name: Python Tests
+name: Python Tests  # this is my project name
 
 on:
   push:
-    branches:
+    branches: #push to the available branch
       - main
   pull_request:
     branches:
@@ -11,7 +11,7 @@ on:
 
 jobs:
   test:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest # or linux
 
     steps:
       - name: Checkout code
@@ -26,13 +26,13 @@ jobs:
         run: |
           python -m venv venv
           source venv/bin/activate
-          pip install -r requirements.txt
+          pip install -r requirements.txt # 
           pip install pytest pytest-html
 
       - name: Run tests
         run: |
-          source venv/bin/activate
-          pytest --html=report.html -p no:warnings
+          source venv/bin/activate # enter the virtual env
+          pytest --html=report.html -p no:warnings # removes all warnings
           
       - name: Upload HTML report
         if: always()
