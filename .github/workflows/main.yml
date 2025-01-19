@@ -24,14 +24,14 @@ jobs:
 
       - name: Install dependencies
         run: |
-          python -m venv venv
-          source venv/bin/activate
+          python -m venv .venv
+          source .venv/bin/activate
           pip install -r requirements.txt # 
           pip install pytest pytest-html
 
       - name: Run tests
         run: |
-          source venv/bin/activate # enter the virtual env
+          source .venv/bin/activate # enter the virtual env
           pytest --html=report.html -p no:warnings # removes all warnings
           
       - name: Upload HTML report

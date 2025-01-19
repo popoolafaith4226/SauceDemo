@@ -10,7 +10,7 @@ from ActionPages.action_page import login_pages, add_to_cart, cart_button, check
 @pytest.fixture(scope="module")
 def driver_setup():
     chrome_options = Options()
-    # chrome_options.add_argument("--headless")  # Run Chrome in headless mode
+    chrome_options.add_argument("--headless")  # Run Chrome in headless mode
 
     chrome_options.add_argument("--disable-gpu")  # Disable GPU acceleration (to avoid errors in headless mode)
     driver = webdriver.Chrome(options=chrome_options)
