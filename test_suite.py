@@ -16,7 +16,7 @@ def driver_setup():
     driver.implicitly_wait(30)
     driver.maximize_window()
     yield driver
-    driver.quit() #quit
+    driver.quit()
 
 
 
