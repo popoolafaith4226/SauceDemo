@@ -47,7 +47,7 @@ def test_checkout_button(login):
     click_checkout.click_checkout()
 #
 # def test_first_name(login):
-#    login.input_first_name(Config.FIRSTNAME)
+#    login.input_first_name(Config.FIRSTNAME) #first name
 
 
 def test_first_name(login):
