@@ -56,11 +56,11 @@ def test_first_name(login):
 
 def test_last_name(login):
     input_last_name = last_name(login.driver)
-    input_last_name.input_last_name(Config.LASTNAME)
+    input_last_name.input_last_name(Config.LASTNAME) #lastname
 
 def test_zip_code(login):
     input_zip_code = zip_code(login.driver)
-    input_zip_code.input_zip_code(Config.ZIPCODE)
+    input_zip_code.input_zip_code(Config.ZIPCODE) #zipcode
 
 def test_continue_button(login):
     the_continue_button = continue_button(login.driver)
