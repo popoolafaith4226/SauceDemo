@@ -68,4 +68,4 @@ def test_continue_button(login):
 
 def test_finsh_button(login):
     the_finsh_button = finish_button(login.driver)
-    the_finsh_button.click_finish_button()
+    the_finsh_button.click_finish_button() #clickthefinishproject

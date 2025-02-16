@@ -22,7 +22,7 @@ jobs:
         with:
           python-version: '3.12'  # Specify your Python version here
 
-      - name: Install dependencies #
+      - name: Install dependencies #install all dependencies
         run: |
           python -m venv .venv
           source .venv/bin/activate
